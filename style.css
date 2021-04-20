@@ -99,7 +99,7 @@ html {
   }
   
   .playing {
-    transform: scale(1);
+    transform: scale(1.06);
     color: #ffffff;
     background-color: #2b2e4a;
     background-blend-mode: overlay;
