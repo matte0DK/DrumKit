@@ -1,7 +1,7 @@
 html {
     font-size: .5rem;
     font-weight: 100;
-    background: #2b2e4a;
+    background: #09015f;
     background-size: cover;
   }
   
@@ -38,10 +38,10 @@ html {
     align-items: center;
     justify-content: center;
     
-    background-color: #921746;
-    border: #921746;
+    background-color: #382cc4;
+    border: #09015f;
     border-style: solid;
-    border-width: 6px;
+    border-width: 8px;
   }
 
   .key-bottom {
@@ -50,7 +50,7 @@ html {
     min-height: 5px;
     transform: skew(40deg, 0deg);
     
-    background-color: #491b24;
+    background-color: #af0069;
   }
 
   .key-side {
@@ -59,7 +59,7 @@ html {
     min-height: 15rem;
     transform: skew(0deg, 45deg);
     
-    background-color: #491b24;
+    background-color: #55b3b1;
   }
 
   #piano-bottom {
@@ -67,7 +67,7 @@ html {
     width: 134rem;
     transform: skew(30deg, 5deg);
     
-    background-color: #903749;
+    background-color: #af0069;
   }
 
   #piano-side {
@@ -76,7 +76,7 @@ html {
     min-height: 39rem;
     transform: skew(-5deg, 60deg);
     
-    background-color: #681d2c;
+    background-color: #55b3b1;
   }
   
   .key {
@@ -91,19 +91,19 @@ html {
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: .8rem;
-    color: #2b2e4a;
-    background: #ffffff;
-    border: .4rem none rgb(255, 196, 0);
-    text-shadow: 0 0 .5rem #e84545;
+    color: #af0069;
+    background: #e9e8ff;
+    border: .4rem none #09015f;
+    text-shadow: 0 0 .5rem #af0069;
     opacity: 80%;
   }
   
   .playing {
-    transform: scale(1.06);
-    color: #ffffff;
-    background-color: #2b2e4a;
+    transform: scale(1.03);
+    color:#55b3b1;
+    background-color: #09015f;
     background-blend-mode: overlay;
-    box-shadow: 0 0 1rem #903749;
+    box-shadow: 0 0 1rem #55b3b1;
   }
   
   kbd {
