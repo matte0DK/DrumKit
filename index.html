@@ -6,56 +6,134 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-  <div class="keys">
-    <div data-key="32" class="key">
-      <kbd>space</kbd>
-      <span class="sound">funk drums</span>
+<div id="piano-body">
+  <div class="keys">\
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">c</span>
+      <div class="key-bottom"></div>
     </div>
-    <div data-key="16" class="key">
-      <kbd>shift</kbd>
-      <span class="sound">hip-hop beat</span>
+    <div class="key-side"></div>
+
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">d</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="68" class="key">
       <kbd>D</kbd>
-      <span class="sound">organ</span>
+      <span class="sound">e</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="70" class="key">
       <kbd>F</kbd>
-      <span class="sound">hip-hop</span>
+      <span class="sound">f</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="71" class="key">
       <kbd>G</kbd>
-      <span class="sound">boom</span>
+      <span class="sound">g</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
+    <div data-key="67" class="key">
+      <kbd>C</kbd>
+      <span class="sound">a</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+
+    <div data-key="86" class="key">
+      <kbd>V</kbd>
+      <span class="sound">b</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+
+    <div data-key="32" class="key">
+      <kbd id="space-symbol">⎵</kbd>
+      <span class="sound">c</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+
+    <div data-key="78" class="key">
+      <kbd>N</kbd>
+      <span class="sound">d</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+
+    <div data-key="77" class="key">
+      <kbd>M</kbd>
+      <span class="sound">e</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+
     <div data-key="72" class="key">
       <kbd>H</kbd>
-      <span class="sound">ride</span>
+      <span class="sound">f</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="74" class="key">
       <kbd>J</kbd>
-      <span class="sound">snare</span>
+      <span class="sound">g</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="75" class="key">
       <kbd>K</kbd>
-      <span class="sound">tom</span>
+      <span class="sound">a</span>
+      <div class="key-bottom"></div>
     </div>
+    <div class="key-side"></div>
+
     <div data-key="76" class="key">
       <kbd>L</kbd>
-      <span class="sound">tink</span>
+      <span class="sound">b</span>
+      <div class="key-bottom"></div>
     </div>
-  </div>
+    <div class="key-side"></div>
 
-  <audio data-key="32" src="sounds/funk-drums-groove_120bpm.wav"></audio>
-  <audio data-key="16" src="sounds/hip-hop-break_90bpm.wav"></audio>
+    <div data-key="186" class="key">
+      <kbd>;</kbd>
+      <span class="sound">b</span>
+      <div class="key-bottom"></div>
+    </div>
+    <div class="key-side"></div>
+    
+  </div>
+  <div id="piano-bottom"></div>
+</div>
+
+<div id="piano-side"></div>
+
+  <audio data-key="65" src="sounds/funk-drums-groove_120bpm.wav"></audio>
+  <audio data-key="83" src="sounds/hip-hop-break_90bpm.wav"></audio>
   <audio data-key="68" src="sounds/organ-melancholic-progression_148bpm.wav"></audio>
   <audio data-key="70" src="sounds/west-coast-type-beat-melody_90bpm_A_major.wav"></audio>
   <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="67" src="sounds/ride.wav"></audio>
+  <audio data-key="86" src="sounds/snare.wav"></audio>
+  <audio data-key="32" src="sounds/tom.wav"></audio>
+  <audio data-key="78" src="sounds/tink.wav"></audio>
+  <audio data-key="77" src="sounds/boom.wav"></audio>
   <audio data-key="72" src="sounds/ride.wav"></audio>
   <audio data-key="74" src="sounds/snare.wav"></audio>
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="186" src="sounds/tink.wav"></audio>
 
 <script>
   window.addEventListener('keydown', function(e) {

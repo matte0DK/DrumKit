@@ -1,42 +1,112 @@
 html {
-    font-size: 8px;
+    font-size: .5rem;
     font-weight: 900;
-    background: url('pexels-photo-1626481.jpeg') bottom center;
+    background: #2b2e4a;
     background-size: cover;
   }
   
   body,html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     font-family: monospace;
   }
-  
+
+  body {
+    margin: 40rem 20rem 20rem 20rem;
+    
+  }
+
   .keys {
-    display: flex;
+    display: inline-flex;
     flex: 1;
-    min-height: 100vh;
+    width: 100rem;
+    min-height: 30vh;
+    background-color: #92172f;
+
     align-items: center;
     justify-content: center;
+
+    text-align: center;
+    
+    -ms-perspective-origin-x: 83%;
+    -ms-perspective-origin-y: 0%;
+    transform: rotate(5deg);
+
+    
+    padding-left: 16rem;
+    padding-right: 16rem;
+
+    border: #92172f;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  #piano-bottom {
+    min-height: 31px;
+    min-width: 100rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    -ms-perspective-origin-x: 83%;
+    -ms-perspective-origin-y: 0%;
+    transform: skew(30deg, 5deg);
+    
+    background-color: #903749;
+  }
+
+  .key-bottom {
+    width: 5rem;
+    min-height: 5px;
+    background-color: #491b24;
+    margin: 5px 2px -8px 0px;
+    transform: skew(40deg, 0deg);
+  }
+
+  .key-side {
+    min-width: .7rem;
+    min-height: 15rem;
+    background-color: #491b24;
+    margin: 16.5rem 1rem 6rem -2.5rem;
+    transform: skew(0deg, 45deg);
+  }
+
+  #piano-side {
+    min-width: 20px;
+    min-height: 38rem;
+    background-color: #681d2c;
+    transform: skew(-5deg, 61deg);
+    margin-top: 12rem;
   }
   
   .key {
-    border: .4rem solid rgb(255, 196, 0);
-    border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1rem;
-    padding: 1rem .5rem;
+    border: .4rem none rgb(255, 196, 0);
+    min-height: 5rem;
+    margin-right: 2.4rem;
+    margin-top: 10rem;
+    font-size: .8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 9rem .6rem .5rem .5rem;
     transition: all .09s ease;
-    width: 12rem;
+    min-width: 22px;
     text-align: center;
-    color: rgb(0, 0, 0);
-    background: rgba(192, 192, 192, 0.4);
-    text-shadow: 0 0 .5rem rgb(255, 174, 0);
+    color: #2b2e4a;
+    background: #ffffff;
+    text-shadow: 0 0 .5rem #e84545;
+    opacity: 80%;
   }
   
   .playing {
-    transform: scale(1.2);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    transform: scale(1);
+    color: #ffffff;
+    background-color: #2b2e4a;
+    background-blend-mode: overlay;
+
+    box-shadow: 0 0 1rem #903749;
   }
   
   kbd {
@@ -48,5 +118,28 @@ html {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    color: #ffffff;
+    color: #e84545;
+  }
+
+  
+  .piano-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: #ffffff;
+    border-style: dotted;
+    border-width: 2px;
+  }
+  
+  .piano-img img{
+    width: 70rem;
+
+    border: #ffffff;
+    border-style: dotted;
+    border-width: 2px;
   }
