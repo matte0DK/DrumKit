@@ -1,6 +1,6 @@
 html {
     font-size: .5rem;
-    font-weight: 900;
+    font-weight: 70;
     background: #2b2e4a;
     background-size: cover;
   }
@@ -115,7 +115,7 @@ html {
   }
   
   .sound {
-    font-size: 1.2rem;
+    font-size: 0rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #e84545;
