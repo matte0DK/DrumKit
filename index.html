@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="piano-body">
-  <div class="keys">\
+  <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">c</span>
@@ -138,12 +138,11 @@
 <script>
   window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     if(!audio) return;
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
-    
   });
 
   function removeTransition(e) {
