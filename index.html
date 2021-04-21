@@ -6,59 +6,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="piano-body">
+  
+
+<div>
+  <div id="title">
+  <h1>drum kit</h1>
+  </div>
   <div class="keys">
     <div data-key="65" class="key">
-      <kbd>A</kbd>
+      <kbd>a</kbd>
       <span class="sound">c</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="83" class="key">
-      <kbd>S</kbd>
+      <kbd>s</kbd>
       <span class="sound">d</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="68" class="key">
-      <kbd>D</kbd>
+      <kbd>d</kbd>
       <span class="sound">e</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="70" class="key">
-      <kbd>F</kbd>
+      <kbd>f</kbd>
       <span class="sound">f</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="71" class="key">
-      <kbd>G</kbd>
+      <kbd>g</kbd>
       <span class="sound">g</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="67" class="key">
-      <kbd>C</kbd>
+      <kbd>c</kbd>
       <span class="sound">a</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="86" class="key">
-      <kbd>V</kbd>
+      <kbd>v</kbd>
       <span class="sound">b</span>
       <div class="key-bottom"></div>
     </div>
     <div class="key-side"></div>
 
     <div data-key="32" class="key">
-      <kbd id="space-symbol">⎵</kbd>
+      <kbd id="space-symbol">_</kbd>
       <span class="sound">c</span>
       <div class="key-bottom"></div>
     </div>
@@ -139,10 +144,12 @@
   window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  
     if(!audio) return;
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
+
   });
 
   function removeTransition(e) {
