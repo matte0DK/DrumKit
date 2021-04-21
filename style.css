@@ -24,6 +24,7 @@ body {
 
 #title {
   margin: 5rem 0rem -6rem 40rem;
+  padding-bottom: 1rem;
   width: 50rem;
   text-align-last: center;
   justify-content: center;
@@ -39,7 +40,7 @@ body {
   text-transform: uppercase;
 
   text-shadow: 3px 2px 1px  #00aeff;
-  opacity: 70%;
+  opacity: 75%;
     
 }
 
@@ -85,13 +86,13 @@ div {
   background: #ffffff;
   border: .4rem none #000000;
   border-radius: 3px;
-  opacity: 70%;
+  opacity: 80%;
 }
   
 .playing {
-  transform: scale(.95);
+  transform: scale(.98);
   color:#ffffff;
-  background-color: #00aeff;
+  background-color: #00aeff #b1003b;
   background-blend-mode: overlay;
   box-shadow: 0 0 1rem #00aeff;
   opacity: 60%;
@@ -108,7 +109,7 @@ kbd {
 }
   
 .sound {
-  font-size: 1rem;
+  font-size: 0rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -147,7 +148,7 @@ kbd {
 }
 
 #piano-side {
-  margin: 20rem 0 -12.3rem -1.5rem;
+  margin: 21rem 0 -12.3rem -1.5rem;
   min-width: 5.4rem;
   min-height: 36.5rem;
   transform: skew(-5deg, 31deg);
@@ -155,6 +156,6 @@ kbd {
   
   border-radius: 5px;
   background-color: #00aeff;
-  opacity: 60%;
+  opacity: 75%;
 }
   
